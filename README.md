@@ -70,13 +70,16 @@ This dataset contains transaction records between 01/12/2010 and 09/12/2011 from
 | Lost Customers     | 111, 112, 121, 131,141,151 |
 
 ## 🔧 Methodology
-- Step 1: Data Preparation
-    
-    - Filter and clean the transaction data
+<details>
+<summary> <strong>Step 1: Data Preparation</strong></summary>
 
-    - Remove canceled and null entries
+- Filter and clean the transaction data
 
-    - Group data by customer for analysis
+- Remove canceled and null entries
+
+- Group data by customer for analysis
+
+</details>
 
 - Step 2: Calculate RFM Metrics
 
