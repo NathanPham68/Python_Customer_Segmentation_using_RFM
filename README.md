@@ -132,6 +132,95 @@ This dataset contains transaction records between 01/12/2010 and 09/12/2011 from
 
 [**Link to code**](https://colab.research.google.com/drive/1XYqTkaKBxrIhCmbzMfv44dSsYL2dLOzh?usp=sharing)
 
+### I. EDA
+
+#### ✅ 1. Import Packages
+
+```ruby
+!pip install pandas==2.1.4 ydata-profiling==4.6.4
+!pip install squarify
+!pip install pydantic-settings
+```
+
+```ruby
+import pandas as pd
+from ydata_profiling import ProfileReport
+import seaborn as sns
+import numpy as np
+
+import matplotlib.pyplot as plt
+import squarify    # algorithm for treemap
+```
+
+#### ✅ 2. Understand about the data
+
+##### 2.1. Load Dataset
+
+```ruby
+path = '/content/drive/MyDrive/DAC 1 on 1 /Python/Project_3_ecommerce_retail/Dataset'
+
+import os
+os.chdir(path)
+
+df = pd.read_excel('ecommerce retail.xlsx', sheet_name = 'ecommerce retail')
+df.head()
+```
+
+<img width="1121" height="277" alt="image" src="https://github.com/user-attachments/assets/0a63739a-7230-441c-8c69-97ade8cfb71f" />
+
+##### 2.2. Get infor about data type & data value
+
+<img width="1121" height="430" alt="image" src="https://github.com/user-attachments/assets/6b1a484d-7230-4bbc-bcfd-b4ee18772429" />
+
+<img width="1121" height="580" alt="image" src="https://github.com/user-attachments/assets/627b0a55-168a-4493-8c14-d132f2f278f2" />
+
+##### 2.3. Using ProfileReport to Understand more about Category Data Type
+
+```ruby
+# profile giúp detect sâu hơn (các cột mang tính chất category, vân vân)
+profile = ProfileReport(df)
+profile
+```
+
+<img width="1121" height="642" alt="image" src="https://github.com/user-attachments/assets/37870be1-5317-4d13-afab-66c137fd406b" />
+
+##### 2.4. Identify the Reason for Unreasonable Data Values (Quantity < 0)
+
+<img width="1121" height="386" alt="image" src="https://github.com/user-attachments/assets/51a21006-3a52-40c6-ac8d-54901be10d54" />
+
+<img width="1121" height="455" alt="image" src="https://github.com/user-attachments/assets/923bce07-83b8-41d1-8149-2bb5ec8d136f" />
+
+<img width="1121" height="287" alt="image" src="https://github.com/user-attachments/assets/aa796941-a1b6-4b29-a8b1-a98fcb087e7d" />
+
+##### 2.5. Identify the Reason for Unreasonable Data Values (Price < 0)
+
+<img width="1121" height="286" alt="image" src="https://github.com/user-attachments/assets/fb0a9a8b-7a50-4b4c-8673-3aff3c63b00f" />
+
+##### 2.6. Handling Invalid Data Types and Data Values
+
+<img width="1121" height="511" alt="image" src="https://github.com/user-attachments/assets/d3790d53-623f-4e94-a11f-d6e5d432d741" />
+
+<img width="1121" height="697" alt="image" src="https://github.com/user-attachments/assets/54fa9a7a-12c3-4339-adf2-619b184183fd" />
+
+#### ✅ 3. Handling Missing Values and Duplicates
+
+##### 3.1. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
