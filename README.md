@@ -2,6 +2,22 @@
 
 <img width="1121" height="643" alt="image" src="https://github.com/user-attachments/assets/85915f37-c102-44a0-99e1-fb6c598b5d56" />
 
+[📌 1. Project Overview](#project-overview)  
+
+[🎯 2. Objective](#objective)  
+
+[🧠 3. Business Context](#business-context)  
+
+[📈 4. Who Is This Project For?](#Who-Is-This-Project-For?)  
+
+[🔍 5. Dataset Description](#Dataset-Description)  
+
+[🧩 6. Segment Mapping](#Segment-Mapping)  
+
+[🔧 7. Methodology](#Methodology)
+
+[📈 8. Analysis & Results](#Analysis-&-Results)
+
 ## 📌 Project Overview
 
 This project focuses on performing customer segmentation using RFM analysis (Recency – Frequency – Monetary) for SuperStore, a global retail company. The main goal is to support the Marketing Department in designing personalized campaigns for different customer groups during the Christmas and New Year season.
