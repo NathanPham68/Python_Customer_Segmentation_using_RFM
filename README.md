@@ -2,6 +2,8 @@
 
 <img width="1121" height="643" alt="image" src="https://github.com/user-attachments/assets/85915f37-c102-44a0-99e1-fb6c598b5d56" />
 
+## 📑 Table of Contents
+
 [📌 1. Project Overview](#project-overview)  
 
 [🎯 2. Objective](#objective)  
