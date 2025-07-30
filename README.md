@@ -176,7 +176,7 @@ Sheet 2 stores customer segments along with their RFM scores.
 
 [**Link to code**](https://colab.research.google.com/drive/1XYqTkaKBxrIhCmbzMfv44dSsYL2dLOzh?usp=sharing)
 
-### I. EDA
+### 🧹 I. EDA
 
 #### ✅ 1. Import Packages
 
@@ -293,7 +293,7 @@ Here we found that the count of the Invoice with null customerID is equivalent t
 
 <img width="1121" height="248" alt="image" src="https://github.com/user-attachments/assets/13a8dd1a-b0d7-44d9-bfac-599d6bcc2a59" />
 
-#### ✅ 4. Data Processing
+###  II. Data Processing
 
 RFM analysis is a customer segmentation technique that uses past purchase behavior to divide customers into groups. RFM helps divide customers into various categories or clusters to identify customers who are more likely to respond to promotions and also for future personalization services.
 
@@ -305,7 +305,7 @@ RFM Attribute Creation(Feature Engineering)
 
 *   M (Monetary): Total amount of transactions (revenue contributed)
 
-##### 4.1. RFM Variables
+#### ✅ 1. RFM Variables
 
 <img width="1121" height="662" alt="image" src="https://github.com/user-attachments/assets/40f69cd8-8fde-44e2-a03f-6513ae0c33e7" />
 
@@ -313,7 +313,7 @@ RFM Attribute Creation(Feature Engineering)
 
 <img width="1121" height="713" alt="image" src="https://github.com/user-attachments/assets/dda784ed-bbe4-46e8-aa04-6c31a220a24c" />
 
-##### 4.2. Loyalty Variables: Loyal and Non-Loyal Customers & Key Customer Characteristics
+#### ✅ 2. Loyalty Variables: Loyal and Non-Loyal Customers & Key Customer Characteristics
 
 <img width="1121" height="572" alt="image" src="https://github.com/user-attachments/assets/7f27335d-28ee-4cd6-ad26-787f50a19216" />
 
@@ -323,9 +323,9 @@ RFM Attribute Creation(Feature Engineering)
 
 <img width="1121" height="501" alt="image" src="https://github.com/user-attachments/assets/04c1df72-6ca9-432c-8136-dc61048850f5" />
 
-#### ✅ 5. Visualization
+###  III. Visualization
 
-##### 5.1. Using RFM model to launch Marketing campaign to thank customers
+#### ✅ 1. Using RFM model to launch Marketing campaign to thank customers
 
 ```ruby
 # In which month have we gained the highest sales?
@@ -432,7 +432,7 @@ These segments represent the majority of customers, but their average transactio
 
 * Design personalized offers to increase purchase frequency and order value
 
-##### 5.2. Exploit potential customers to become loyal customers
+#### ✅ 2. Exploit potential customers to become loyal customers
 
 ```ruby
 # Function to calculate percentile thresholds
