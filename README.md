@@ -12,19 +12,23 @@
 
 [📈 4. Who Is This Project For?](#Who-Is-This-Project-For?)  
 
-[🔍 5. Dataset Description](#Dataset-Description)  
+[📈 5. RFM Analysis Overview](#RFM-Analysis-Overview)
 
-[🧩 6. Segment Mapping](#Segment-Mapping)  
+[🔍 6. Dataset Description](#Dataset-Description)  
 
-[🔧 7. Methodology](#Methodology)
 
-[📈 8. Analysis & Results](#Analysis-&-Results)
+
+[🔧 8. Methodology](#Methodology)
+
+[📈 9. Analysis & Results](#Analysis-&-Results)
 
 ## 📌 Project Overview
 
 This project focuses on performing customer segmentation using RFM analysis (Recency – Frequency – Monetary) for SuperStore, a global retail company. The main goal is to support the Marketing Department in designing personalized campaigns for different customer groups during the Christmas and New Year season.
 
 In previous years, the marketing team segmented customers manually using Excel. However, with the increasing size of the customer base and sales data, they needed the Data Analysis Department to build an automated, scalable solution using Python and data science techniques.
+
+This project involves data preparation, RFM score calculation, segmentation, visualization, and providing actionable recommendations for the Marketing and Sales teams to optimize their strategies.
 
 ## 🎯 Objective
 
@@ -54,24 +58,44 @@ To do so, the Marketing team requested a customer segmentation model that groups
 
 ✔️ Executives – To make informed decisions on customer engagement and lifetime value optimization.
 
+## 🔎 RFM Analysis Overview
+
+RFM (Recency, Frequency, Monetary) is a customer analysis technique based on purchasing behavior. In RFM analysis, each customer is assigned a score based on these three factors. The data is then used to categorize customers into segments, helping businesses identify key audiences for targeted marketing and sales strategies.
+
+* Recency: Measures the time elapsed since a customer's last purchase.
+* Frequency: Evaluates how often a customer makes transactions.
+* Monetary: Calculates the total amount spent by the customer.
+
+By applying RFM, businesses can segment customers based on their value, allowing them to optimize marketing and customer engagement strategies.
+
 ## 🔍 Dataset Description
 
 [**Link to dataset**](https://drive.google.com/drive/folders/1-Dhrd-__D244PINUga9lLeXVZHJDO-iK?usp=sharing)
 
 This dataset contains transaction records between 01/12/2010 and 09/12/2011 from a UK-based online store.
 
-| Column      | Description                                               |
-| ----------- | --------------------------------------------------------- |
-| InvoiceNo   | Unique invoice ID (prefixed with "C" for canceled orders) |
-| StockCode   | Product code                                              |
-| Description | Product name                                              |
-| Quantity    | Number of items purchased                                 |
-| InvoiceDate | Date and time of purchase                                 |
-| UnitPrice   | Price per unit (in sterling)                              |
-| CustomerID  | Unique customer ID                                        |
-| Country     | Customer's country of residence                           |
+<details>
+  <summary><strong>Sheet 1: E-commerce Retail</strong></summary>
 
-## 🧩 Segment Mapping
+Sheet 1 (541,910 rows × 8 columns) contains transaction-level data, including order details, customer IDs, and purchase information.
+
+| Column Name  | Data Type         | Description  |  
+|-------------|-----------------|--------------|  
+| **InvoiceNo**  | `object`  | Unique invoice number for each transaction (6-digit). If it starts with 'C', it indicates a cancellation. |  
+| **StockCode**  | `object`  | Unique product (item) code (5-digit). |  
+| **Description**  | `object`  | Product (item) name. |  
+| **Quantity**  | `int64`  | The number of units purchased per transaction. |  
+| **InvoiceDate**  | `datetime64[ns]`  | Date and time when the transaction occurred. |  
+| **UnitPrice**  | `float64`  | Price per unit of the product in sterling. |  
+| **CustomerID**  | `float64`  | Unique 5-digit identifier for each customer. |  
+| **Country**  | `object`  | Name of the country where the customer resides. |  
+
+</details>
+
+<details>
+  <summary><strong>Sheet 2: Segment Mapping</strong></summary>
+
+Sheet 2 stores customer segments along with their RFM scores.
 
 | Segment            | RFM Scores |
 | ------------------ | ------------------ |
@@ -86,6 +110,8 @@ This dataset contains transaction records between 01/12/2010 and 09/12/2011 from
 | Cannot Lose Them   | 155, 154, 144, 214,215,115, 114, 113 |
 | Hibernating        | 332, 322, 233, 232, 223, 222, 132, 123, 122, 212, 211 |
 | Lost Customers     | 111, 112, 121, 131,141,151 |
+
+</details>
 
 ## 🔧 Methodology
 <details>
