@@ -1,4 +1,4 @@
-# 🛒 Customer Segmentation using RFM Analysis – SuperStore Case Study
+# 🛒 [Python] How Can We Segment Customers to Improve Targeted Marketing? - Retail Analytics
 
 <img width="1121" height="643" alt="image" src="https://github.com/user-attachments/assets/85915f37-c102-44a0-99e1-fb6c598b5d56" />
 
