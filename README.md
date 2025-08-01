@@ -218,6 +218,32 @@ df.head()
 
 <img width="1121" height="580" alt="image" src="https://github.com/user-attachments/assets/627b0a55-168a-4493-8c14-d132f2f278f2" />
 
+⚡ During the initial data exploration, it was observed that the Quantity and Unit Price columns contain negative values. This is not logically valid and requires further investigation. Possible actions include:
+
+- Checking for data entry errors.
+
+- Identifying whether negative values indicate refunds or cancellations.
+
+- Removing or adjusting incorrect data points to ensure accuracy in analysis.
+
+⚡ Manual Review Required
+
+Some orders contain incorrect descriptions → Perform a manual check and mark them as errors to facilitate further processing.
+
+⚡ Data Validation & Error Identification
+
+* Flagged Erroneous Orders: Merged description_check_update with ecommerce to detect inconsistencies in product descriptions.
+
+* Checked Negative Quantities & Cancellations: Identified if negative Quantity values correspond to cancellations by verifying InvoiceNo starting with "C".
+
+-> Review flagged errors and cancellations to ensure data integrity before analysis.
+
+🚨 Identifying Invalid Transactions
+
+After flagging cancellations, verify if there are any transactions where Quantity is negative, but the InvoiceNo does not start with "C".
+
+These may indicate data inconsistencies.
+
 ##### 2.3. Using ProfileReport to Understand more about Category Data Type
 
 ```ruby
@@ -274,6 +300,14 @@ Here we found that the count of the Invoice with null customerID is equivalent t
 <img width="1121" height="598" alt="image" src="https://github.com/user-attachments/assets/4510d35a-3643-42b7-8750-914e55aed674" />
 
 <img width="1121" height="667" alt="image" src="https://github.com/user-attachments/assets/efccebb3-bb64-4787-bc9a-3a07431c4cbb" />
+
+🧐 Key Findings:
+
+* Missing CustomerID values are spread across all months & countries, not just a specific region or time period.
+
+* Likely due to human errors (e.g., incomplete updates) or system recording issues.
+
+🛠 Solution: Since CustomerID is essential, drop missing values to maintain data integrity.
 
 ##### 3.3. Handling Missing Values
 
