@@ -12,15 +12,15 @@
 
 [📈 4. Who Is This Project For?](#Who-Is-This-Project-For?)  
 
-[📈 5. RFM Analysis Overview](#RFM-Analysis-Overview)
+[🔎 5. RFM Analysis Overview](#RFM-Analysis-Overview)
 
 [🔍 6. Dataset Description](#Dataset-Description)  
 
+[🔧 7. Methodology](#Methodology)
 
+[📈 8. Analysis & Results](#Analysis-&-Results)
 
-[🔧 8. Methodology](#Methodology)
-
-[📈 9. Analysis & Results](#Analysis-&-Results)
+[🧮 9. Key Takeaways](#Key-Takeaways)
 
 ## 📌 Project Overview
 
@@ -327,7 +327,7 @@ Here we found that the count of the Invoice with null customerID is equivalent t
 
 <img width="1121" height="248" alt="image" src="https://github.com/user-attachments/assets/13a8dd1a-b0d7-44d9-bfac-599d6bcc2a59" />
 
-###  II. Data Processing
+### 🛠 II. Data Processing
 
 RFM analysis is a customer segmentation technique that uses past purchase behavior to divide customers into groups. RFM helps divide customers into various categories or clusters to identify customers who are more likely to respond to promotions and also for future personalization services.
 
@@ -357,7 +357,7 @@ RFM Attribute Creation(Feature Engineering)
 
 <img width="1121" height="501" alt="image" src="https://github.com/user-attachments/assets/04c1df72-6ca9-432c-8136-dc61048850f5" />
 
-###  III. Visualization
+### 📊 III. Visualization
 
 #### ✅ 1. Using RFM model to launch Marketing campaign to thank customers
 
@@ -611,7 +611,7 @@ This suggests they are likely individual consumers who prefer lower-priced produ
 
 * Position this group as a strategic base for consistent revenue and sustainable growth
 
-## 💡 Key Takeaways
+## 🧮 Key Takeaways
 
 - RFM analysis helps businesses understand customer behavior and lifetime value.
 
